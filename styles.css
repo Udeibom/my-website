@@ -1,0 +1,307 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#first-half {
+    background-image: url("IMG-20220804-WA0017\ \(1\)c.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    position: sticky;
+    height: 100%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+}
+
+#topnav {
+    display: none;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+#topnav #myLinks {
+    display: none;
+}
+
+#topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+#topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#active {
+    background-color: hsl(24, 100%, 60%);
+    color: white;
+}
+
+#nav-logo {
+    color: hsl(24, 100%, 60%);
+}
+
+.nav-link:active {
+    color: hsl(24, 100%, 50%);
+    text-shadow: 1px 3px 3px #24a8e6;
+}
+
+#about {
+    background-image: url("./lines.jpg");
+    background-size: cover;
+}
+
+#moreabout {
+    width: 40%;
+    background-color: rgba(15, 14, 14, 0.9);
+    color: hsl(24, 100%, 70%);
+    border: 2px solid hsl(24, 100%, 70%);
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-left: 13px;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+#download {
+    width: 40%;
+    background-color: rgba(15, 14, 14, 0.9);
+    color: hsl(24, 100%, 70%);
+    border: 2px solid hsl(24, 100%, 70%);
+    border-radius: 3px;
+    margin-top: 25px;
+    margin-left: 13px;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+#secondImage {
+    position: relative;
+    width: 50%;
+    text-align: right;
+    padding: 0;
+}
+
+#imagen {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid orangered;
+    border-radius: 10px;
+}
+
+#overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s ease;
+    opacity: 0.9;
+}
+
+#secondImage:hover #overlay {
+    width: 100%;
+}
+
+#text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+#contactme {
+    background-image: url("./3D-HD-Backgrounds-High-Quality-Download.jpg");
+    background-size: cover;
+    text-align: center;
+    padding: 2rem;
+}
+
+#contacta {
+    margin-bottom: 5%;
+}
+
+#contact1 {
+    background-color: white;
+    margin: 2%;
+    padding: 6% 0;
+    border-radius: 10px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+#contactmain {
+    text-align: center;
+    padding: 2rem;
+}
+
+#second-half2 {
+    background-image: url("./lines.jpg");
+    background-size: cover;
+}
+
+#second-half3 {
+    background-image: url("./3D-HD-Backgrounds-High-Quality-Download.jpg");
+    background-size: cover;
+}
+
+#end1,
+#middle1,
+#middle2 {
+    display: inline-block;
+    overflow: hidden;
+    height: 1.5em;
+}
+
+#end2 {
+    position: absolute;
+    color: #ff6a00
+}
+
+#middle1,
+#middle2 {
+    color: #cfcfcf
+}
+
+#middle1 {
+    animation: ani1 5s infinite;
+    animation-delay: -3s;
+    max-width: 0;
+}
+
+#middle2 {
+    animation: ani2 5s infinite;
+    animation-delay: -3s;
+    max-width: 0;
+}
+
+@keyframes ani1 {
+    0% {
+        max-width: 500px;
+    }
+
+    25% {
+        max-width: 0;
+    }
+
+    75% {
+        max-width: 0;
+    }
+
+    90% {
+        max-width: 500px;
+    }
+
+    100% {
+        max-width: 500px;
+    }
+}
+
+@keyframes ani2 {
+    0% {
+        max-width: 0;
+    }
+
+    25% {
+        max-width: 0;
+    }
+
+    50% {
+        max-width: 500px;
+    }
+
+    75% {
+        max-width: 0;
+    }
+
+    100% {
+        max-width: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #first-half {
+        background-image: url("./sit.jpg");
+        background-size: 50 100;
+        position: relative;
+    }
+
+    #topnav {
+        display: block;
+    }
+
+    #big-nav {
+        display: none;
+    }
+
+    #navbot {
+        position: relative;
+    }
+
+    #hideAbout1 {
+        display: none;
+    }
+
+    #secondImage {
+        display: none;
+    }
+
+    #hideContact1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #contact {
+        margin: 1%;
+        padding: 6% -15%;
+    }
+    #about {
+        display: none;
+    }
+
+    #hideAbout2 {
+        display: none;
+    }
+
+    #contactme {
+        display: none;
+    }
+
+    #hideContact2 {
+        display: none;
+    }
+}

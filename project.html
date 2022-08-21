@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./cssi/all.min.css">
+        <title>PROJECTS</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="prostyles.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Top Navigation Menu -->
+            <div id="topnav">
+                <a href="#home" id="active">Y<span style="font-size: 14px;">H</span>W<span style="font-size: 14px;">H</span></a>
+                <div id="myLinks">
+                    <a href="./index.html">HOME</a>
+                    <a href="">BLOG</a>
+                </div>
+                <a href="javascript:void(0);" class="icon"
+                    onclick="myFunction()">
+                    <i class="fa fa-bars "></i>
+                </a>
+            </div>
+            <nav class="row navbar navbar-expand-sm navbar-dark" id="big-nav">
+                <div class="collapse navbar-collapse col-md-6 offset-md-3"
+                    id="collapsibleNavId">
+                    <a class="navbar-brand" id="nav-logo" href="#">Y<span
+                            style="font-size: 14px;">H</span>W<span
+                            style="font-size: 14px;">H</span></a>
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item active me-4 fw-bold">
+                            <a class="nav-link" href="./index.html">HOME <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item me-4 fw-bold">
+                            <a class="nav-link" href="./about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item me-4 fw-bold">
+                            <a class="nav-link" href="./project.html">PROJECTS</a>
+                        </li>
+                        <li class="nav-item me-4 fw-bold">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="./contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                    <span class="rounded-circle col-sm-1 me-5 d-none d-sm-block"
+                        style="width: 30px; height: 30px; background-color:
+                        #24a8e6; text-align: center;"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" color="white" fill="currentColor"
+                            class="bi bi-flower3" viewBox="0 0 16 16">
+                            <path d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2
+                                0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886
+                                4.63 10 4.264 10 4a2 2 0 1 0-4 0c0
+                                .264.114.63.288
+                                1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2
+                                3.464c.229.132.603.216
+                                1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2
+                                3.464c.229-.132.489-.414.752-.767C6.114 11.37 6
+                                11.736 6 12a2 2 0 1 0 4
+                                0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2
+                                2 0 1 0
+                                2-3.464c-.229-.132-.603-.216-1.04-.268zM9
+                                4a1.468 1.468 0 0
+                                1-.045.205c-.039.132-.1.295-.183.484a12.88 12.88
+                                0 0 1-.637 1.223L8 6.142a21.73 21.73 0 0
+                                1-.135-.23 12.88 12.88 0 0 1-.637-1.223 4.216
+                                4.216 0 0 1-.183-.484A1.473 1.473 0 0 1 7 4a1 1
+                                0 1 1 2 0zM3.67 5.5a1 1 0 0 1 1.366-.366 1.472
+                                1.472 0 0 1
+                                .156.142c.094.1.204.233.326.4.245.333.502.747.742
+                                1.163l.13.232a21.86 21.86 0 0 1-.265.002 12.88
+                                12.88 0 0 1-1.379-.06 4.214 4.214 0 0 1-.51-.083
+                                1.47 1.47 0 0 1-.2-.064A1 1 0 0 1 3.67
+                                5.5zm1.366 5.366a1 1 0 0 1-1-1.732c.001 0
+                                .016-.008.047-.02.037-.013.087-.028.153-.044.134-.032.305-.06.51-.083a12.88
+                                12.88 0 0 1 1.379-.06c.09 0 .178 0
+                                .266.002a21.82 21.82 0 0
+                                1-.131.232c-.24.416-.497.83-.742 1.163a4.1 4.1 0
+                                0 1-.327.4 1.483 1.483 0 0 1-.155.142zM9 12a1 1
+                                0 0 1-2 0 1.476 1.476 0 0 1
+                                .045-.206c.039-.131.1-.294.183-.483.166-.378.396-.808.637-1.223L8
+                                9.858l.135.23c.241.415.47.845.637
+                                1.223.083.19.144.352.183.484A1.338 1.338 0 0 1 9
+                                12zm3.33-6.5a1 1 0 0 1-.366 1.366 1.478 1.478 0
+                                0
+                                1-.2.064c-.134.032-.305.06-.51.083-.412.045-.898.061-1.379.06-.09
+                                0-.178
+                                0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4.1
+                                4.1 0 0 1
+                                .327-.4c.046-.05.085-.086.114-.11.026-.022.04-.03.041-.032a1
+                                1 0 0 1 1.366.366zm-1.366 5.366a1.494 1.494 0 0
+                                1-.155-.141 4.225 4.225 0 0 1-.327-.4A12.88
+                                12.88 0 0 1 9.74 9.16a22 22 0 0
+                                1-.13-.232l.265-.002c.48-.001.967.015
+                                1.379.06.205.023.376.051.51.083.066.016.116.031.153.044l.048.02a1
+                                1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0
+                                2z"/>
+                            </svg>
+                        </span>
+                    </div>
+                </nav>
+                <div id="container">
+                    <div class="animate one">
+                        <span>m</span><span>y</span><span>p</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span><span>.</span><span>c</span><span>o</span><span>m</span>
+                    </div>
+                    <div>
+                        <h2>PORTFOLIO</h2>
+                        <div id="texta"><h3>Hey, Savour the look!</h3></div>
+                        <br>
+                        <div id="texta" style="margin-top: -5%;">
+                            <span>
+                                <h3>
+                                    These are some of my completed projects
+                                </h3>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5" id="project-image">
+                        <div class="container-fluid">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="container col-sm-6">
+                                        <img src="./desktop.png"
+                                            alt="nft-desktop" style="width:
+                                            100%; height: 100%;">
+                                    </div>
+                                    <h1>NFT preview card component challenge on
+                                        Frontend Mentor
+                                    </h1>
+                                    <h2>Live URL: <a href="https://caleb-nftcard.netlify.app">www.caleb-nftcard.netlify.app</a></h2>
+                                    <h2>Code: <a href="https://www.github.com/Udeibom/caleb-nftcard">Github</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <script src="nav.js"></script>
+            <script src="script.js"></script>
+            <script src="./js/bootstrap.min.js"></script>
+        </body>
+    </html>
